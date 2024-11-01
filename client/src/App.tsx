@@ -1,4 +1,3 @@
-// src/App.tsx
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -11,6 +10,7 @@ import { AuthProvider, useAuth } from "./context/AuthContext";
 import Auth from "./components/Auth";
 import Dashboard from "./pages/Dashboard";
 import { Toaster } from 'sonner';
+
 
 const queryClient = new QueryClient();
 
@@ -39,6 +39,7 @@ const App: React.FC = () => {
                   </PrivateRoute>
                 }
               />
+        
               
             </Routes>
           </div>
